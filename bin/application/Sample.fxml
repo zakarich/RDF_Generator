@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+  <children>
+    
+     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="455.0" prefWidth="646.0" style="-fx-background-color: #5a7186;" VBox.vgrow="ALWAYS">
+         <children>
+            <Text layoutX="3.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <ImageView fitHeight="840.0" fitWidth="961.0" layoutX="-15.0" layoutY="-76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/back.PNG" />
+               </image>
+            </ImageView>
+            <TextField fx:id="uriQuery" focusTraversable="false" layoutX="51.0" layoutY="80.0" opacity="0.59" prefHeight="31.0" prefWidth="829.0" />
+            <Label layoutX="6.0" layoutY="84.0" prefHeight="24.0" prefWidth="46.0" style="-fx-font-family: &quot;Arial Black&quot;, Gadget, sans-serif;" text="URI:" textFill="#fffbfb">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="uriButton" focusTraversable="false" layoutX="52.0" layoutY="137.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" style="-fx-font-family: &quot;Arial Black&quot;, Gadget, sans-serif;" text="Show Graph" textFill="#5247ab" />
+            <ImageView fitHeight="97.0" fitWidth="101.0" layoutX="65.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/rdf-icon-with-shadow.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="90.0" layoutX="782.0" layoutY="511.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/semantic_web-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="156.0" fitWidth="311.0" layoutX="331.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/a3-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text fill="#4c4d42" layoutX="146.0" layoutY="637.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Arial Black&quot;, Gadget, sans-serif;" text="Realized by :" underline="true" />
+            <Text fill="#4b749d" layoutX="127.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Arial Black&quot;, Gadget, sans-serif;" text="Zakariyae.CHATRI" />
+            <Text fill="#4c4d42" layoutX="753.0" layoutY="637.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Arial Black&quot;, Gadget, sans-serif;" text="Supervised by:" underline="true" />
+            <Text fill="#4b749d" layoutX="746.0" layoutY="670.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Arial Black&quot;, Gadget, sans-serif;" text="Pr.N.En-Nahnahi" />
+          <MenuBar layoutX="-1.0" layoutY="-4.0" opacity="0.96" prefHeight="32.0" prefWidth="946.0" style="-fx-background-color: #d1e3f4;">
+            <menus>
+              <Menu mnemonicParsing="false" text="File">
+                <items>
+                  <MenuItem fx:id="rdfButton" mnemonicParsing="false" text="Open an RDF file…" />
+                </items>
+              </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Add">
+                           <items>
+                              <MenuItem fx:id="ClassButton" mnemonicParsing="false" text="Class" />
+                              <MenuItem fx:id="SubClassButton" mnemonicParsing="false" text="SubCLass" />
+                              <MenuItem fx:id="PropertyButton" mnemonicParsing="false" text="Property" />
+                              <MenuItem fx:id="CommentButton" mnemonicParsing="false" text="Comment" />
+                               <MenuItem fx:id="InstanceButton" mnemonicParsing="false" text="Instance" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                   
+            </menus>
+          </MenuBar>
+            <Slider layoutX="887.0" layoutY="167.0" orientation="VERTICAL" prefHeight="320.0" prefWidth="18.0" />
+            <WebView fx:id="MyWebView" layoutX="28.0" layoutY="171.0" opacity="0.77" prefHeight="312.0" prefWidth="857.0" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

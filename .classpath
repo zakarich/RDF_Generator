@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JENA"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JenaAdd"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jenaapa"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jenanahi"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/tibco"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JUNG"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
